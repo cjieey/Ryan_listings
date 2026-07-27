@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Marisol Vega — Premium Condominiums in the Philippines | Book a Free Site Viewing</title>
+<title>RY Listings — Premium Condominiums in the Philippines | Book a Free Site Viewing</title>
 <meta name="description" content="Licensed real estate specialist for premium condominiums in Metro Manila, Cebu and Davao. Compare pre-selling and ready-for-occupancy units, check live inventory, compute your monthly amortization, and book a free site viewing.">
 <meta name="theme-color" content="#0A1B2E">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://example.com/">
 
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Marisol Vega Properties">
+<meta property="og:site_name" content="RY Listings">
 <meta property="og:title" content="Find Your Dream Condo Today">
 <meta property="og:description" content="Premium condominiums in prime locations, flexible payment terms, and guidance from a licensed specialist.">
 <meta property="og:image" content="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=70">
@@ -30,11 +30,11 @@
     {
       "@type": "RealEstateAgent",
       "@id": "https://example.com/#agent",
-      "name": "Marisol Vega Properties",
+      "name": "RY Listings",
       "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=70",
       "description": "Licensed real estate specialist for premium condominium sales in Metro Manila, Cebu and Davao.",
       "telephone": "+63-917-555-0142",
-      "email": "hello@marisolvega.ph",
+      "email": "hello@rylistings.ph",
       "priceRange": "₱₱₱",
       "areaServed": ["Taguig", "Makati", "Quezon City", "Pasig", "Cebu City", "Davao City"],
       "address": {
@@ -367,15 +367,20 @@ textarea.ctrl{resize:vertical;min-height:110px;line-height:1.6}
    ============================================================ */
 .tower{display:grid;gap:clamp(28px,4vw,54px);grid-template-columns:1fr;align-items:center}
 @media(min-width:980px){.tower{grid-template-columns:minmax(0,1fr) 420px}}
-.stack{display:flex;flex-direction:column-reverse;gap:5px;padding:20px;border-radius:var(--r-lg);background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1)}
-.floor{display:grid;grid-template-columns:44px 1fr;gap:10px;align-items:center}
-.floor__n{font-family:var(--ff-mono);font-size:11px;color:var(--on-navy-muted);text-align:right;letter-spacing:.04em}
-.floor__units{display:grid;grid-template-columns:repeat(10,1fr);gap:4px}
-.unit{height:18px;border-radius:4px;position:relative;transition:transform .3s var(--ease),box-shadow .3s;transform-origin:center}
-.unit:hover{transform:scaleY(1.5) scaleX(1.06);z-index:3;box-shadow:0 6px 18px -6px rgba(0,0,0,.7)}
-.unit--a{background:linear-gradient(180deg,var(--gold-2),var(--gold))}
-.unit--r{background:rgba(226,203,146,.28);border:1px solid rgba(226,203,146,.45)}
-.unit--s{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.09)}
+.stackwrap{border-radius:var(--r-lg);background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.09);padding:10px 8px 4px}
+.stackwrap svg{display:block;width:100%;height:auto}
+.sk{fill:none;stroke:rgba(255,255,255,.34);stroke-width:1;stroke-linecap:round;stroke-linejoin:round}
+.sk-faint{fill:none;stroke:rgba(255,255,255,.15);stroke-width:.8;stroke-linecap:round}
+.sk-gold{fill:none;stroke:var(--gold);stroke-width:1;opacity:.8;stroke-linecap:round}
+.sk-fill{fill:rgba(255,255,255,.035);stroke:none}
+.sk-side{fill:rgba(0,0,0,.22);stroke:none}
+.sk-t{font-family:var(--ff-mono);font-size:8px;fill:rgba(255,255,255,.42);letter-spacing:.06em}
+.sk-tg{font-family:var(--ff-mono);font-size:8px;fill:var(--gold);letter-spacing:.16em}
+.unit{transition:fill .25s var(--ease),stroke .25s var(--ease);cursor:pointer}
+.unit--a{fill:var(--gold)}
+.unit--r{fill:rgba(226,203,146,.26);stroke:rgba(226,203,146,.5);stroke-width:.6}
+.unit--s{fill:rgba(255,255,255,.05);stroke:rgba(255,255,255,.13);stroke-width:.6}
+.unit:hover{fill:#FFF6E0;stroke:var(--gold-2);stroke-width:1.1}
 .legend{display:flex;flex-wrap:wrap;gap:18px;margin-top:22px}
 .legend span{display:inline-flex;align-items:center;gap:9px;font-size:12.5px;color:var(--on-navy-muted);font-weight:500}
 .legend i{width:14px;height:14px;border-radius:4px;display:block}
@@ -638,11 +643,11 @@ textarea.ctrl{resize:vertical;min-height:110px;line-height:1.6}
 <!-- ================= NAV ================= -->
 <header class="nav" id="nav">
   <div class="nav__in">
-    <a href="#home" class="brand" aria-label="Marisol Vega Properties, home">
-      <span class="brand__mark">MV</span>
+    <a href="#home" class="brand" aria-label="RY Listings, home">
+      <span class="brand__mark">RY</span>
       <span>
-        <span class="brand__name">Marisol Vega</span>
-        <span class="brand__sub">Properties</span>
+        <span class="brand__name">RY Listings</span>
+        <span class="brand__sub">Premium Condominiums</span>
       </span>
     </a>
 
@@ -827,14 +832,14 @@ textarea.ctrl{resize:vertical;min-height:110px;line-height:1.6}
       <div>
         <span class="eyebrow eyebrow--line rev">Live inventory</span>
         <h2 class="h-lg rev" style="max-width:16ch">The floors people ask about are the ones already gone.</h2>
-        <p class="lead rev" data-d="1" style="color:var(--on-navy-muted);margin-top:16px">This is the real allocation board for <b id="towerName" style="color:var(--gold-2);font-weight:600">Aurelia Residences</b> — refreshed every morning against the developer's system. Hover any unit to see its line, cut, and status before you commit to a viewing.</p>
+        <p class="lead rev" data-d="1" style="color:var(--on-navy-muted);margin-top:16px">This is the real allocation board for <b id="towerName" style="color:var(--gold-2);font-weight:600">Aurelia Residences</b> — refreshed every morning against the developer's system. Tap any unit to see its line, cut, and status before you commit to a viewing.</p>
 
         <div class="legend rev" data-d="2">
           <span><i style="background:linear-gradient(180deg,var(--gold-2),var(--gold))"></i>Available</span>
           <span><i style="background:rgba(226,203,146,.28);border:1px solid rgba(226,203,146,.45)"></i>Reserved</span>
           <span><i style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1)"></i>Sold</span>
         </div>
-        <div class="tower__readout" id="towerRead">Hover a unit to inspect it</div>
+        <div class="tower__readout" id="towerRead">Hover or tap a unit to inspect it</div>
 
         <div class="rev" data-d="3" style="display:flex;flex-wrap:wrap;gap:12px;margin-top:28px">
           <button class="btn btn--gold" data-open="book">Hold a unit for 24 hours</button>
@@ -843,8 +848,8 @@ textarea.ctrl{resize:vertical;min-height:110px;line-height:1.6}
       </div>
 
       <div class="rev" data-d="2">
-        <div class="stack" id="stack" aria-hidden="true"></div>
-        <p style="font-size:12px;color:var(--on-navy-muted);text-align:center;margin-top:14px">Podium levels 1–5 excluded · 38 residential floors</p>
+        <div class="stackwrap" id="stack"></div>
+        <p id="towerStats" style="font-size:12px;color:var(--on-navy-muted);text-align:center;margin-top:14px" aria-live="polite"></p>
       </div>
     </div>
   </div>
@@ -1094,7 +1099,7 @@ textarea.ctrl{resize:vertical;min-height:110px;line-height:1.6}
       <div>
         <span class="eyebrow eyebrow--line rev">About</span>
         <h2 class="h-lg rev" style="max-width:16ch">I sold my first unit in 2015. I still answer that buyer's calls.</h2>
-        <p class="lead rev" data-d="1" style="margin-top:20px">I'm Marisol Vega, a PRC-licensed real estate broker working across Metro Manila, Cebu, and Davao. I specialise in condominium sales — pre-selling and ready-for-occupancy — for end-users and for investors building a rental portfolio.</p>
+        <p class="lead rev" data-d="1" style="margin-top:20px">I'm the licensed broker behind RY Listings, working across Metro Manila, Cebu, and Davao. I specialise in condominium sales — pre-selling and ready-for-occupancy — for end-users and for investors building a rental portfolio.</p>
         <p class="lead rev" data-d="2" style="margin-top:16px">My practice is deliberately narrow. I hold accreditation with six developers, I know which towers have had turnover delays, and I will tell you when a unit is priced above what it will resell for. That costs me commissions occasionally. It's also why most of my clients arrive through referral.</p>
 
         <div class="rev" data-d="3" style="display:grid;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));margin-top:30px">
@@ -1132,7 +1137,7 @@ textarea.ctrl{resize:vertical;min-height:110px;line-height:1.6}
         </div>
         <div class="cline">
           <span class="cline__ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.8" y="4.5" width="18.4" height="15" rx="2.6"/><path d="m3.4 6.2 8.6 6 8.6-6"/></svg></span>
-          <div><b>Email</b><a href="mailto:hello@marisolvega.ph">hello@marisolvega.ph</a></div>
+          <div><b>Email</b><a href="mailto:hello@rylistings.ph">hello@rylistings.ph</a></div>
         </div>
         <div class="cline">
           <span class="cline__ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10.4c0 5.6-8 12.1-8 12.1s-8-6.5-8-12.1a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10.2" r="2.8"/></svg></span>
@@ -1144,7 +1149,7 @@ textarea.ctrl{resize:vertical;min-height:110px;line-height:1.6}
         </div>
 
         <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:22px">
-          <button class="btn btn--sm" style="background:linear-gradient(135deg,#00B2FF,#006AFF);color:#fff" data-toast="Messenger opens in the live build. Chat ID: m.me/marisolvega.ph">Message on Messenger</button>
+          <button class="btn btn--sm" style="background:linear-gradient(135deg,#00B2FF,#006AFF);color:#fff" data-toast="Messenger opens in the live build. Chat ID: m.me/rylistings">Message on Messenger</button>
           <button class="btn btn--sm" style="background:linear-gradient(135deg,#5BD066,#25D366);color:#06331A" data-toast="WhatsApp opens in the live build. Number: +63 917 555 0142">Chat on WhatsApp</button>
         </div>
 
@@ -1174,7 +1179,7 @@ textarea.ctrl{resize:vertical;min-height:110px;line-height:1.6}
         <div class="field"><label for="c-msg">What are you looking for?</label><textarea class="ctrl" id="c-msg" name="message" placeholder="Two-bedroom in BGC or Ortigas, ready for occupancy, moving in before December."></textarea></div>
         <label style="display:flex;gap:11px;align-items:flex-start;font-size:13px;color:var(--muted);line-height:1.6">
           <input type="checkbox" id="c-consent" checked style="margin-top:3px;accent-color:var(--gold);width:17px;height:17px">
-          <span>Send me the price list and new listings. I can unsubscribe anytime, and my details stay with Marisol Vega Properties.</span>
+          <span>Send me the price list and new listings. I can unsubscribe anytime, and my details stay with RY Listings.</span>
         </label>
         <button class="btn btn--gold btn--full" type="submit">Send my inquiry</button>
         <p style="font-size:12px;color:var(--muted);text-align:center">Typical reply time: under 4 working hours.</p>
@@ -1208,10 +1213,10 @@ textarea.ctrl{resize:vertical;min-height:110px;line-height:1.6}
     <div class="foot__grid">
       <div>
         <div class="brand" style="margin-bottom:18px">
-          <span class="brand__mark">MV</span>
+          <span class="brand__mark">RY</span>
           <span>
-            <span class="brand__name" style="color:#fff">Marisol Vega</span>
-            <span class="brand__sub">Properties</span>
+            <span class="brand__name" style="color:#fff">RY Listings</span>
+            <span class="brand__sub">Premium Condominiums</span>
           </span>
         </div>
         <p style="font-size:14.5px;color:var(--on-navy-muted);line-height:1.75;max-width:38ch">Licensed condominium sales across Metro Manila, Cebu, and Davao. Accredited with six developers, working with buyers from first viewing through to turnover.</p>
@@ -1259,7 +1264,7 @@ textarea.ctrl{resize:vertical;min-height:110px;line-height:1.6}
     </div>
 
     <div class="foot__bar">
-      <span>© <span id="year">2026</span> Marisol Vega Properties. All rights reserved.</span>
+      <span>© <span id="year">2026</span> RY Listings. All rights reserved.</span>
       <nav aria-label="Legal">
         <a href="#" data-toast="Privacy Policy page is part of the full build.">Privacy Policy</a>
         <a href="#" data-toast="Terms of Service page is part of the full build.">Terms of Service</a>
@@ -1275,7 +1280,7 @@ textarea.ctrl{resize:vertical;min-height:110px;line-height:1.6}
     <span class="fab__tip">Ask the buyer assistant</span>
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 11.4a7.9 7.9 0 0 1-8.5 7.9L4 21l1.6-4a7.9 7.9 0 1 1 14.9-5.6Z"/><path d="M8.6 11.9h.01M12 11.9h.01M15.4 11.9h.01"/></svg>
   </button>
-  <button class="fab fab--msgr" data-toast="Messenger opens in the live build. Chat ID: m.me/marisolvega.ph" aria-label="Message on Messenger">
+  <button class="fab fab--msgr" data-toast="Messenger opens in the live build. Chat ID: m.me/rylistings" aria-label="Message on Messenger">
     <span class="fab__tip">Messenger</span>
     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2C6.5 2.2 2.2 6.3 2.2 11.7c0 3 1.4 5.8 3.7 7.5v3.7l3.4-1.9c.9.3 1.8.4 2.7.4 5.5 0 9.8-4 9.8-9.5S17.5 2.2 12 2.2Zm1 12.4-2.5-2.7-4.9 2.7 5.4-5.7 2.5 2.6 4.8-2.6-5.3 5.7Z"/></svg>
   </button>
@@ -1301,7 +1306,7 @@ textarea.ctrl{resize:vertical;min-height:110px;line-height:1.6}
 <!-- ================= AI CHAT ================= -->
 <div class="chatwin" id="chatWin" role="dialog" aria-label="Buyer assistant">
   <div class="chatwin__hd">
-    <span style="width:34px;height:34px;border-radius:11px;background:linear-gradient(135deg,var(--gold-2),var(--gold));display:grid;place-items:center;color:#20160A;font-weight:700;font-size:13px;font-family:var(--ff-display)">MV</span>
+    <span style="width:34px;height:34px;border-radius:11px;background:linear-gradient(135deg,var(--gold-2),var(--gold));display:grid;place-items:center;color:#20160A;font-weight:700;font-size:13px;font-family:var(--ff-display)">RY</span>
     <div style="line-height:1.3">
       <b style="font-size:14.5px">Buyer assistant</b>
       <div style="font-size:11.5px;color:var(--on-navy-muted);display:flex;align-items:center;gap:6px"><i style="width:6px;height:6px;border-radius:50%;background:#4FD08A;display:block"></i>Answers instantly</div>
@@ -1574,10 +1579,10 @@ const AMENITIES = {
 };
 
 const REVIEWS = [
-  {n:'Katrina & Paolo R.', t:'Two-bedroom, Salcedo Village', s:5, q:'She talked us out of the first unit we wanted. Said the west exposure would cook us by 3pm and the resale line was weaker. She was right on both counts, and the unit we bought instead has already appraised higher.'},
-  {n:'Dr. Emmanuel S.', t:'Investor, four units', s:5, q:'I have bought four units through Marisol across three developers. What I pay her for is the honest read on turnover risk. She told me to skip a tower in 2023 that is still not handed over today.'},
-  {n:'Jenny L.', t:'First-time buyer, Vertis North', s:5, q:'I was terrified of the paperwork. She built me a checklist, chased my Pag-IBIG contributions when the online portal broke, and sat with me at the bank. I never felt like a small commission.'},
-  {n:'The Villanueva family', t:'Three-bedroom, Mandaluyong', s:5, q:'Turnover was delayed by five months and she handled every call with the developer so we did not have to. We got a penalty credit against our dues that we did not even know we were entitled to.'}
+  {n:'Katrina & Paolo R.', t:'Two-bedroom, Salcedo Village', s:5, q:'RY Listings talked us out of the first unit we wanted \u2014 the west exposure would have cooked us by 3pm and the resale line was weaker. Right on both counts. The unit we bought instead has already appraised higher.'},
+  {n:'Dr. Emmanuel S.', t:'Investor, four units', s:5, q:'Four units through RY Listings across three developers. What I pay for is the honest read on turnover risk \u2014 I was told to skip a tower in 2023 that is still not handed over today.'},
+  {n:'Jenny L.', t:'First-time buyer, Vertis North', s:5, q:'I was terrified of the paperwork. They built me a checklist, chased my Pag-IBIG contributions when the online portal broke, and sat with me at the bank. I never once felt like a small commission.'},
+  {n:'The Villanueva family', t:'Three-bedroom, Mandaluyong', s:5, q:'Turnover was delayed by five months and RY Listings handled every call with the developer so we did not have to. We got a penalty credit against our dues that we did not even know we were entitled to.'}
 ];
 
 const POSTS = [
@@ -1931,7 +1936,7 @@ function mapSVG(p, dark){
     + '<rect x="18" y="14" width="46" height="34" rx="3" fill="var(--line)" opacity=".7"/><rect x="120" y="80" width="70" height="42" rx="3" fill="var(--line)" opacity=".7"/><rect x="232" y="12" width="52" height="36" rx="3" fill="var(--line)" opacity=".7"/><rect x="20" y="152" width="52" height="40" rx="3" fill="var(--line)" opacity=".7"/>'
     + pins.map((n,i) => '<g><circle cx="'+pos[i][0]+'" cy="'+pos[i][1]+'" r="4.4" fill="var(--gold)"/><circle cx="'+pos[i][0]+'" cy="'+pos[i][1]+'" r="9" fill="none" stroke="var(--gold)" stroke-width="1" opacity=".45"/></g>').join('')
     + '<g><circle cx="150" cy="104" r="13" fill="var(--navy)"/><circle cx="150" cy="104" r="21" fill="none" stroke="var(--gold)" stroke-width="1.4" opacity=".6"/>'
-    + '<text x="150" y="108" text-anchor="middle" font-size="11" font-family="\'Playfair Display\',serif" fill="#E2CB92">MV</text></g>'
+    + '<text x="150" y="108" text-anchor="middle" font-size="11" font-family="\'Playfair Display\',serif" fill="#E2CB92">RY</text></g>'
     + '<text x="12" y="202" font-size="8" font-family="Inter,sans-serif" fill="var(--muted)">'+p.area+', '+p.city+' · schematic</text>'
     + '</svg>';
 }
@@ -2052,10 +2057,10 @@ function openProperty(id){
 function downloadDoc(kind, p){
   let name, body;
   if(kind === 'pricelist' || !p){
-    name = 'Marisol-Vega-Price-List-July-2026.csv';
+    name = 'RY-Listings-Price-List-July-2026.csv';
     body = 'Property,Developer,City,Area,Type,Status,Turnover,Starting Price (PHP),Unit Sizes,Bedrooms,Bathrooms,Parking,Est. Monthly (20% down / 20 yrs)\n'
       + P.map(x => [x.name,x.dev,x.city,x.area,x.type,x.status,x.turnover,x.price,'"'+x.sizes+'"',bedLabel(x.beds),x.baths,x.parking,Math.round(monthlyFor(x.price))].join(',')).join('\n')
-      + '\n\nPrepared by Marisol Vega Properties · PRC License No. 0029481 · hello@marisolvega.ph · +63 917 555 0142';
+      + '\n\nPrepared by RY Listings · PRC License No. 0029481 · hello@rylistings.ph · +63 917 555 0142';
   } else {
     name = p.name.replace(/\s+/g,'-') + '-' + (kind === 'brochure' ? 'Brochure' : 'Floor-Plans') + '.txt';
     body = p.name.toUpperCase() + '\n' + p.area + ', ' + p.city + '\n' + p.dev + '\n' + '='.repeat(52)
@@ -2068,7 +2073,7 @@ function downloadDoc(kind, p){
       + '\n\nINDICATIVE TERMS\n  Reservation      ' + peso(p.price > 20000000 ? 100000 : p.price > 10000000 ? 50000 : 25000)
       + '\n  Downpayment 20%  ' + pesoShort(p.price*.2)
       + '\n  Monthly amort.   ' + peso(monthlyFor(p.price))
-      + '\n\n' + '='.repeat(52) + '\nMarisol Vega Properties · PRC License No. 0029481\nhello@marisolvega.ph · +63 917 555 0142';
+      + '\n\n' + '='.repeat(52) + '\nRY Listings · PRC License No. 0029481\nhello@rylistings.ph · +63 917 555 0142';
   }
   const url = URL.createObjectURL(new Blob([body], {type:'text/plain;charset=utf-8'}));
   const a = document.createElement('a'); a.href = url; a.download = name; a.click();
@@ -2082,33 +2087,123 @@ function buildTower(p){
   p = p || P[0];
   $('#towerName').textContent = p.name;
   const rand = seeded(p.name.split('').reduce((a,c)=>a+c.charCodeAt(0),7));
-  const floors = Math.min(p.floors, 38), lines = p.lines, letters = 'ABCDEFGHIJ';
-  let html = '';
-  for(let f = 1; f <= floors; f++){
-    const height = f / floors;
-    let units = '';
-    for(let l = 0; l < lines; l++){
+  const FL = p.floors, LN = p.lines, letters = 'ABCDEFGHIJ';
+
+  /* --- geometry: two-point elevation sketch --- */
+  const fh   = Math.max(8, Math.min(18, 418/FL));   // floor height
+  const x0 = 66, x1 = 306;                           // shaft front face
+  const dx = 46, dy = -24;                           // depth vector (receding right face)
+  const base = 520, gy = 600;                        // podium top, ground line
+  const topY = base - FL*fh;
+  const px0 = 34, px1 = 338;                         // podium front face
+  const mid = (x0+x1)/2;
+  const crownA = topY - 16, crownB = topY - 27, mastTop = topY - 66;
+  const inX0 = x0 + 9, inW = (x1 - 9) - inX0;
+  const gap = LN > 8 ? 7 : 10;
+  const uw = (inW - (LN-1)*gap)/LN;
+  const uh = Math.max(4, fh - 4);
+  const n = v => (Math.round(v*10)/10);
+
+  let g = '';
+
+  /* ground plane + hatching */
+  g += '<path class="sk-faint" d="M6 '+gy+' H'+px1+' L'+(px1+dx)+' '+(gy+dy)+' H414"/>';
+  for(let i=0;i<27;i++) g += '<path class="sk-faint" d="M'+(12+i*15)+' '+(gy+4)+' l-8 10"/>';
+
+  /* podium: side, roof, front */
+  g += '<path class="sk-side" d="M'+px1+' '+gy+' L'+(px1+dx)+' '+(gy+dy)+' V'+(base+dy)+' L'+px1+' '+base+' Z"/>';
+  g += '<path class="sk-fill" d="M'+px0+' '+base+' L'+(px0+dx)+' '+(base+dy)+' H'+(px1+dx)+' L'+px1+' '+base+' Z"/>';
+  g += '<path class="sk-fill" d="M'+px0+' '+base+' H'+px1+' V'+gy+' H'+px0+' Z"/>';
+  for(let i=1;i<4;i++){ const y = base + (gy-base)*i/4; g += '<path class="sk-faint" d="M'+px0+' '+y+' H'+px1+'"/>'; }
+  g += '<path class="sk" d="M'+px0+' '+base+' H'+px1+' V'+gy+' H'+px0+' Z"/>';
+  g += '<path class="sk" d="M'+px1+' '+gy+' L'+(px1+dx)+' '+(gy+dy)+' V'+(base+dy)+' L'+px1+' '+base+'"/>';
+  g += '<path class="sk" d="M'+px0+' '+base+' L'+(px0+dx)+' '+(base+dy)+' H'+(px1+dx)+'"/>';
+
+  /* entrance bay + canopy */
+  g += '<path class="sk" d="M'+(mid-26)+' '+(gy-27)+' h52 v27"/>';
+  g += '<path class="sk-faint" d="M'+mid+' '+(gy-27)+' V'+gy+'"/>';
+  g += '<path class="sk-gold" d="M'+(mid-38)+' '+(gy-31)+' h76"/>';
+
+  /* figures + planting for scale */
+  [px0+28, px0+39].forEach(fx => {
+    g += '<g class="sk-faint"><circle cx="'+fx+'" cy="'+(gy-13)+'" r="2.2"/><path d="M'+fx+' '+(gy-10.6)+' v6 M'+(fx-3)+' '+gy+' l3 -4.6 3 4.6 M'+(fx-3.4)+' '+(gy-8.2)+' h6.8"/></g>';
+  });
+  g += '<g class="sk-faint"><path d="M'+(px1-28)+' '+gy+' v-11"/><circle cx="'+(px1-28)+'" cy="'+(gy-18)+'" r="7.5"/></g>';
+
+  /* shaft: receding face, front panel, roof plane */
+  g += '<path class="sk-side" d="M'+x1+' '+base+' L'+(x1+dx)+' '+(base+dy)+' V'+n(topY+dy)+' L'+x1+' '+n(topY)+' Z"/>';
+  g += '<path class="sk-fill" d="M'+x0+' '+n(topY)+' H'+x1+' V'+base+' H'+x0+' Z"/>';
+  g += '<path class="sk-fill" d="M'+x0+' '+n(topY)+' L'+(x0+dx)+' '+n(topY+dy)+' H'+(x1+dx)+' L'+x1+' '+n(topY)+' Z"/>';
+
+  /* floor slabs read through onto the side face */
+  for(let f=0; f<=FL; f++){
+    const y = n(base - f*fh);
+    g += '<path class="sk-faint" d="M'+x1+' '+y+' L'+(x1+dx)+' '+n(y+dy)+'"/>';
+  }
+  [0.38,0.74].forEach(t => {
+    const mx = n(x1+dx*t);
+    g += '<path class="sk-faint" d="M'+mx+' '+n(base+dy*t)+' V'+n(topY+dy*t)+'"/>';
+  });
+
+  /* the units themselves */
+  let units = '', c = {a:0,r:0,s:0};
+  for(let f = 1; f <= FL; f++){
+    const h = f/FL, y = n(base - f*fh + 2), soldP = 0.62 - h*0.42;
+    for(let l = 0; l < LN; l++){
       const r = rand();
-      const soldP = 0.62 - height*0.42;
       const cls = r < soldP ? 's' : r < soldP + 0.14 ? 'r' : 'a';
-      const label = (f+5) + '-' + letters[l];
-      const st = cls === 'a' ? 'Available' : cls === 'r' ? 'Reserved' : 'Sold';
+      c[cls]++;
       const sqm = 42 + Math.round(rand()*70);
       const beds = sqm > 92 ? 3 : sqm > 58 ? 2 : sqm > 38 ? 1 : 0;
-      const price = Math.round((p.price * (0.82 + height*0.5) * (sqm/70)) / 100000) * 100000;
-      units += '<span class="unit unit--'+cls+'" data-u="Unit '+label+' · '+bedLabel(beds)+' · '+sqm+' sqm · '+st+' · '+pesoShort(price)+'"></span>';
+      const price = Math.round((p.price * (0.82 + h*0.5) * (sqm/70)) / 100000) * 100000;
+      const st = cls === 'a' ? 'Available' : cls === 'r' ? 'Reserved' : 'Sold';
+      units += '<rect class="unit unit--'+cls+'" x="'+n(inX0 + l*(uw+gap))+'" y="'+y+'" width="'+n(uw)+'" height="'+n(uh)+'" rx="1.2"'
+             + ' data-u="Unit '+(f+5)+'-'+letters[l]+' · '+bedLabel(beds)+' · '+sqm+' sqm · '+st+' · '+pesoShort(price)+'"/>';
     }
-    html += '<div class="floor"><span class="floor__n">'+(f+5)+'F</span><div class="floor__units">'+units+'</div></div>';
   }
-  const stack = $('#stack');
-  stack.innerHTML = html;
-  stack.style.setProperty('--cols', lines);
-  $$('.floor__units', stack).forEach(u => u.style.gridTemplateColumns = 'repeat('+lines+',1fr)');
+  g += units;
+
+  /* crown + mast */
+  const c1a = x0+16, c1b = x1-16, c2a = x0+42, c2b = x1-42, t6 = 0.6;
+  g += '<path class="sk-fill" d="M'+c1a+' '+n(topY)+' V'+n(crownA)+' H'+c1b+' V'+n(topY)+' Z"/>';
+  g += '<path class="sk" d="M'+c1a+' '+n(topY)+' V'+n(crownA)+' H'+c1b+' V'+n(topY)+'"/>';
+  g += '<path class="sk" d="M'+c1a+' '+n(crownA)+' L'+n(c1a+dx*t6)+' '+n(crownA+dy*t6)+' H'+n(c1b+dx*t6)+' L'+c1b+' '+n(crownA)+'"/>';
+  g += '<path class="sk" d="M'+n(c1b+dx*t6)+' '+n(crownA+dy*t6)+' V'+n(topY+dy*t6)+'"/>';
+  g += '<path class="sk" d="M'+c2a+' '+n(crownA)+' V'+n(crownB)+' H'+c2b+' V'+n(crownA)+'"/>';
+  g += '<path class="sk-gold" d="M'+mid+' '+n(crownB)+' V'+n(mastTop)+'"/>';
+  g += '<circle class="sk-gold" cx="'+mid+'" cy="'+n(mastTop-4)+'" r="2.8"/>';
+  g += '<path class="sk-faint" d="M'+(mid-6)+' '+n(mastTop+15)+' h12 M'+(mid-4)+' '+n(mastTop+26)+' h8"/>';
+
+  /* primary outlines drawn last so they sit crisp on top */
+  g += '<path class="sk" d="M'+x0+' '+base+' V'+n(topY)+' H'+x1+' V'+base+'"/>';
+  g += '<path class="sk" d="M'+x1+' '+n(topY)+' L'+(x1+dx)+' '+n(topY+dy)+' V'+(base+dy)+' L'+x1+' '+base+'"/>';
+  g += '<path class="sk" d="M'+x0+' '+n(topY)+' L'+(x0+dx)+' '+n(topY+dy)+' H'+(x1+dx)+'"/>';
+
+  /* floor ticks every fifth level */
+  for(let f = 5; f <= FL; f += 5){
+    const y = n(base - f*fh + fh/2);
+    g += '<path class="sk-faint" d="M'+(x0-7)+' '+y+' h6"/>';
+    g += '<text class="sk-t" x="'+(x0-11)+'" y="'+n(y+2.8)+'" text-anchor="end">'+(f+5)+'F</text>';
+  }
+
+  /* construction lines + height dimension — the architect\u2019s tell */
+  g += '<path class="sk-faint" stroke-dasharray="2 5" d="M46 '+n(topY)+' H'+(x0-3)+' M46 '+base+' H'+(x0-3)+' M18 '+gy+' H'+(px0-4)+'"/>';
+  g += '<path class="sk-gold" d="M38 '+n(topY)+' V'+base+' M34 '+n(topY)+' h8 M34 '+base+' h8"/>';
+  g += '<text class="sk-tg" transform="translate(30 '+n((topY+base)/2)+') rotate(-90)" text-anchor="middle">'+FL+' RESIDENTIAL FLOORS</text>';
+  g += '<text class="sk-t" x="'+x0+'" y="'+(gy+28)+'">ELEVATION · UNIT ALLOCATION · INDICATIVE, NOT TO SCALE</text>';
+
+  const vbY = n(mastTop - 24);
+  $('#stack').innerHTML = '<svg viewBox="0 '+vbY+' 420 '+n(636-vbY)+'" role="img" aria-label="Elevation sketch of '+p.name+'. '
+    + c.a+' units available, '+c.r+' reserved, '+c.s+' sold.">'+g+'</svg>';
+  $('#towerStats').textContent = c.a+' available · '+c.r+' reserved · '+c.s+' sold · '+(FL*LN)+' units across '+FL+' floors';
 }
 $('#stack').addEventListener('mouseover', e => {
   const u = e.target.closest('[data-u]'); if(u) $('#towerRead').textContent = u.dataset.u;
 });
-$('#stack').addEventListener('mouseleave', () => { $('#towerRead').textContent = 'Hover a unit to inspect it'; });
+$('#stack').addEventListener('click', e => {
+  const u = e.target.closest('[data-u]'); if(u) $('#towerRead').textContent = u.dataset.u;
+});
+$('#stack').addEventListener('mouseleave', () => { $('#towerRead').textContent = 'Hover or tap a unit to inspect it'; });
 
 /* ===================== MORTGAGE CALCULATOR ===================== */
 function amort(principal, annualRate, years){
@@ -2321,14 +2416,14 @@ function chatAnswer(q){
   let best = null, score = 0;
   KB.forEach(e => { const n = e.k.filter(k => s.includes(k)).length; if(n > score){ score = n; best = e; } });
   return best ? best.a
-    : 'That one is better answered properly than quickly. Send it to me at hello@marisolvega.ph or book a free consultation and I will walk you through it — no obligation either way.';
+    : 'That one is better answered properly than quickly. Send it to me at hello@rylistings.ph or book a free consultation and I will walk you through it — no obligation either way.';
 }
 function toggleChat(open){
   const w = $('#chatWin');
   const willOpen = open === undefined ? !w.classList.contains('open') : open;
   w.classList.toggle('open', willOpen);
   if(willOpen && !$('#chatLog').children.length){
-    chatSay('Hi, I\u2019m Marisol\u2019s buyer assistant. Ask me about payment terms, financing, requirements, or any tower in the portfolio.','ai');
+    chatSay('Hi, I\u2019m the RY Listings buyer assistant. Ask me about payment terms, financing, requirements, or any tower in the portfolio.','ai');
   }
   if(willOpen) setTimeout(()=>$('#chatInput').focus({preventScroll:true}),300);
 }
